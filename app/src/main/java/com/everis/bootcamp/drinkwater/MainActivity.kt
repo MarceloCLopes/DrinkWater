@@ -45,6 +45,9 @@ class MainActivity : AppCompatActivity(),
     }
 
     override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
-        //TODO: 010 - Chame o método updateWaterCount se o parametro key for igual a constante PrefencesUtils.KEY_WATER_COUNT
+
+        if (PreferencesUtils.KEY_WATER_COUNT == key){
+            updateWaterCount()
+        }
     }
 }
