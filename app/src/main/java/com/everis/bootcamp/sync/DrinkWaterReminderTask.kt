@@ -1,18 +1,21 @@
 package com.everis.bootcamp.sync
 
+import android.content.Context
+import com.everis.bootcamp.utils.PreferencesUtils
+
 
 class DrinkWaterReminderTask {
     companion object {
         const val ACTION_INCREMENT_WATER_COUNT = "action-increment-water-count"
+
+        private fun incrementWaterCount(context: Context){
+            PreferencesUtils.incrementWaterCount(context)
+        }
     }
 
 
 
-    /*TODO: 002 -
-       - Criar uma função privada chamada incrementWaterCount para incrementar o contador de copo de águas
-       - Inclua um Context como parametro da função
-       - Chame o metodo incrementWaterCount da classe PreferencesUtils
-     */
+
 
     /*TODO: 003
        - Crie um método publico e estatico para executar a tarefa
