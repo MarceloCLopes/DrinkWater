@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        updateWaterCount()
+
         imageview_cup_icon.setOnClickListener {
             incrementWaterHandler()
         }
