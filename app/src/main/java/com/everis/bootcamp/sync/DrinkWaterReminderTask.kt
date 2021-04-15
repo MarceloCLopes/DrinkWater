@@ -2,7 +2,11 @@ package com.everis.bootcamp.sync
 
 
 class DrinkWaterReminderTask {
-    //TODO: 001 - Criar uma String constante estatica chamada ACTION_INCREMENT_WATER_COUNT para representar a ação de incrementar o contador
+    companion object {
+        const val ACTION_INCREMENT_WATER_COUNT = "action-increment-water-count"
+    }
+
+
 
     /*TODO: 002 -
        - Criar uma função privada chamada incrementWaterCount para incrementar o contador de copo de águas
