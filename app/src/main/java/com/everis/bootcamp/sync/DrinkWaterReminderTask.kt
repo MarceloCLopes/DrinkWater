@@ -12,7 +12,7 @@ class DrinkWaterReminderTask {
             PreferencesUtils.incrementWaterCount(context)
         }
 
-        fun executeTask(context: Context, action: String){
+        fun executeTask(context: Context, action: String?){
             if (ACTION_INCREMENT_WATER_COUNT == action){
                 incrementWaterCount(context)
             }
