@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity(),
         setContentView(R.layout.activity_main)
 
         imageview_cup_icon.setOnClickListener {
-            //TODO: 009 - Chame a função incrementWaterHandler
+            incrementWaterHandler()
         }
 
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
