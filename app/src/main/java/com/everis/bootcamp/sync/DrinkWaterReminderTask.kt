@@ -11,17 +11,14 @@ class DrinkWaterReminderTask {
         private fun incrementWaterCount(context: Context){
             PreferencesUtils.incrementWaterCount(context)
         }
+
+        fun executeTask(context: Context, action: String){
+            if (ACTION_INCREMENT_WATER_COUNT == action){
+                incrementWaterCount(context)
+            }
+
+        }
     }
-
-
-
-
-
-    /*TODO: 003
-       - Crie um método publico e estatico para executar a tarefa
-       - Coloque um Context como parametro e uma string chamada action
-       - Quando a action for igual a constante ACTION_INCREMENT_WATER_COUNT chame o método incrementWaterCount desta classe
-     */
 }
 
 
